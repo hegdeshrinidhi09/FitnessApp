@@ -23,7 +23,6 @@ struct Equipments: View {
             Text("Equipments")
                 .font(.title)
                 .padding(.bottom)
-
             ForEach(selectedItems.keys.sorted(), id: \.self) { item in
                 Toggle(isOn: Binding(
                     get: { selectedItems[item] ?? false },
