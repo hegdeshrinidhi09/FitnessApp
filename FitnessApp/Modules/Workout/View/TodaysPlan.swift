@@ -32,6 +32,7 @@ struct TodaysPlan: View {
                     HStack {
                         Text(exercise.name)
                             .font(.title2)
+                        Spacer()
                         Text(exercise.reps)
                             .font(.title2)
                     }
